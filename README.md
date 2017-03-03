@@ -1,14 +1,11 @@
 # papillon_or_akita
 
+## 学習
 ```
-$ python dog_keras.py 
+$ python dog_keras.py
 Using TensorFlow backend.
+
 Epoch 1/30
-W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
-W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
 249/249 [==============================] - 2s - loss: 1.4564 - acc: 0.6305     
 Epoch 2/30
 249/249 [==============================] - 2s - loss: 0.5353 - acc: 0.7550     
@@ -70,4 +67,24 @@ Epoch 30/30
 249/249 [==============================] - 2s - loss: 0.0252 - acc: 0.9893     
 64/83 [======================>.......] - ETA: 0sloss= 0.38888781796
 accuracy= 0.899598400277
+```
+
+## 結果
+```
+$ python dog-checker.py test01.jpg test02.jpg test03.jpg test05.jpg test06.jpg test07.jpg test08.jpg
+
++ 入力: test01.jpg
+| 名前: papillon
++ 入力: test02.jpg
+| 名前: akita
++ 入力: test03.jpg
+| 名前: papillon
++ 入力: test05.jpg
+| 名前: papillon
++ 入力: test06.jpg
+| 名前: akita
++ 入力: test07.jpg
+| 名前: akita
++ 入力: test08.jpg
+| 名前: papillon
 ```
